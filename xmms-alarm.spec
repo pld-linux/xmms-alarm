@@ -23,7 +23,7 @@ xmms-alarm to wtyczka budzika do u¿ywania z XMMS. Wtyczka ta zwiêksza
 g³o¶no¶æ rano w celu obudzenia.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 cp -f %{_datadir}/automake/install-sh .
