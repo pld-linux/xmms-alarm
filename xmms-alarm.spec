@@ -10,7 +10,6 @@ URL: 		http://www.snika.uklinux.net/
 BuildRequires:	xmms-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
 
 %description
 xmms-alarm is an alarm plugin to use with XMMS that fades up the
