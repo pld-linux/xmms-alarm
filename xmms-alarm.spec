@@ -1,7 +1,7 @@
 Summary:	An alarm plugin for XMMS
 Summary(pl):    Wtyczka budzika do XMMS
 Name:		xmms-alarm
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:        GPL
 Group:          X11/Applications/Multimedia
@@ -35,7 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	libdir=$RPM_BUILD_ROOT%{_libdir}/xmms/General
 
-gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{_libdir}/xmms/General/*
-%doc *.gz 
+%doc README
