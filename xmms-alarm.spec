@@ -1,5 +1,5 @@
 Summary:	An alarm plugin for XMMS
-Summary(pl):    Wtyczka budzika do XMMS
+Summary(pl):	Wtyczka budzika do XMMS
 Name:		xmms-alarm
 Version:	0.3.2
 Release:	2
@@ -30,7 +30,6 @@ cp -f %{_datadir}/automake/install-sh .
 cp -f %{_datadir}/automake/config.sub .
 %configure \
 	--libdir=%{xmms_general_plugindir}
-
 %{__make}
 
 %install
