@@ -1,5 +1,5 @@
 Summary:	An alarm plugin for XMMS
-Summary(pl):    Plugin alarm do XMMS
+Summary(pl):    Wtyczka budzika do XMMS
 Name:		xmms-alarm
 Version:	0.3.1
 Release:	1
@@ -7,7 +7,6 @@ License:        GPL
 Group:          X11/Applications/Multimedia
 Source0:	http://www.snika.uklinux.net/xmms-alarm/%{name}-%{version}.tar.gz
 URL: 		http://www.snika.uklinux.net/
-Requires:	xmms >= 1.2.0
 BuildRequires:	xmms-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -17,23 +16,26 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 xmms-alarm is an alarm plugin to use with XMMS that fades up the
 volume in the morning and wakes you up.
 
-%prep
-rm -rf $RPM_BUILD_ROOT
+%description -l pl
+xmms-alarm to wtyczka budzika do u¿ywania z XMMS. Wtyczka ta zwiêksza
+g³o¶no¶æ rano w celu obudzenia.
 
+%prep
 %setup -q 
 
 %build
-
-%configure --libdir=/%{_libdir}/xmms/General
+%configure \
+	--libdir=%{_libdir}/xmms/General
 
 %{__make}
 
 %install
-
 rm -rf $RPM_BUILD_ROOT
-%{__make} libdir=$RPM_BUILD_ROOT%{_libdir}/xmms/General install
 
-gzip -9nf  README
+%{__make} install \
+	libdir=$RPM_BUILD_ROOT%{_libdir}/xmms/General
+
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
