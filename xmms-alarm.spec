@@ -7,6 +7,7 @@ License:        GPL
 Group:          X11/Applications/Multimedia
 Source0:	http://www.snika.uklinux.net/xmms-alarm/%{name}-%{version}.tar.gz
 URL: 		http://www.snika.uklinux.net/
+BuildRequires:	automake
 BuildRequires:	xmms-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,6 +24,8 @@ g³o¶no¶æ rano w celu obudzenia.
 %setup -q 
 
 %build
+cp -f %{_datadir}/automake/install-sh .
+cp -f %{_datadir}/automake/config.sub .
 %configure \
 	--libdir=%{_libdir}/xmms/General
 
