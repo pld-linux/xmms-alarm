@@ -6,6 +6,7 @@ Release:	1
 License:        GPL
 Group:          X11/Applications/Multimedia
 Source0:	http://www.snika.uklinux.net/xmms-alarm/%{name}-%{version}.tar.gz
+# Source0-md5:	0474472d68e29daccb8ce9d0700508ed
 URL: 		http://www.snika.uklinux.net/
 BuildRequires:	automake
 BuildRequires:	xmms-devel >= 1.2.0
