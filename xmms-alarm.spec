@@ -1,12 +1,12 @@
 Summary:	An alarm plugin for XMMS
 Summary(pl):	Wtyczka budzika do XMMS
 Name:		xmms-alarm
-Version:	0.3.2
-Release:	3
+Version:	0.3.6
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.snika.uklinux.net/xmms-alarm/%{name}-%{version}.tar.gz
-# Source0-md5:	0474472d68e29daccb8ce9d0700508ed
+# Source0-md5:	89ba6fc16bfdcb38aa3762335f0e7add
 URL:		http://www.snika.uklinux.net/
 BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.125
