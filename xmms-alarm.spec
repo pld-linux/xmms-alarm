@@ -1,5 +1,5 @@
 Summary:	An alarm plugin for XMMS
-Summary(pl):	Wtyczka budzika do XMMS
+Summary(pl.UTF-8):   Wtyczka budzika do XMMS
 Name:		xmms-alarm
 Version:	0.3.6
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 xmms-alarm is an alarm plugin to use with XMMS that fades up the
 volume in the morning and wakes you up.
 
-%description -l pl
-xmms-alarm to wtyczka budzika do u¿ywania z XMMS. Wtyczka ta zwiêksza
-g³o¶no¶æ rano w celu obudzenia.
+%description -l pl.UTF-8
+xmms-alarm to wtyczka budzika do uÅ¼ywania z XMMS. Wtyczka ta zwiÄ™ksza
+gÅ‚oÅ›noÅ›Ä‡ rano w celu obudzenia.
 
 %prep
 %setup -q
