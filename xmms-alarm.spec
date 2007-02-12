@@ -1,5 +1,5 @@
 Summary:	An alarm plugin for XMMS
-Summary(pl.UTF-8):   Wtyczka budzika do XMMS
+Summary(pl.UTF-8):	Wtyczka budzika do XMMS
 Name:		xmms-alarm
 Version:	0.3.6
 Release:	1
